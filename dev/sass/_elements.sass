@@ -1,0 +1,260 @@
+// CAROUSEL
+// ---------------------------------------
+
+// Bootstrap Carousel full screen
+.carousel-full
+    z-index: 999
+    height: 100vh
+    position: relative
+    .carousel-inner
+        .carousel-item
+            min-height: 300px
+            height: 100vh
+            img
+                max-width: 100%
+    .carousel-content
+        background: rgba(0, 20, 59, 0.71)
+        position: absolute
+        width: 100%
+        height: 100%
+        margin-top: 20px
+        top: 0
+        left: 0
+        color: #fff
+        font-family: $font1
+        max-height: 100%
+        text-align: center
+        padding-top: 80px
+        z-index: 9980
+        @include flex-column()
+        .image
+            max-width: 150px
+        .text
+            padding: 10px 30px 70px 
+            // text-shadow: 5px 5px 10px #000
+            .title
+                font-weight: 700
+                font-size: 4rem
+            .thin
+                font-weight: 400
+                font-size: 1.5rem
+
+@media (max-width: 700px)
+    .carousel-full
+        .carousel-content
+            margin-top: 0
+            padding: 0 80px
+
+.home-mobile
+    display: none
+@media (max-width: 800px)
+    .carousel-full
+        display: none
+    .home-mobile
+        background: url(../img/homeback-mobile.jpg) no-repeat center center
+        background-size: cover
+        display: block
+        z-index: 999
+        height: 100vh
+        padding-top: 80px
+        position: relative
+        @include flex-column()
+        .image
+            max-width: 150px
+        .text
+            padding: 10px 30px 70px 
+            text-shadow: 5px 5px 10px #000
+            text-align: center
+            color: #fff
+            .title
+                font-weight: 700
+                font-size: 2.5rem
+            .thin
+                font-weight: 400
+                font-size: 1rem
+                text-align: center
+
+// Sorteable Gallery
+// ----------------
+.sortable-gallery
+    .sortable-gallery-filters
+        ul li
+            font-family: $font1
+            font-size: 2rem
+            border-bottom: 1px solid transparent
+            @include transition(0.2s)
+            &:hover
+                cursor: pointer
+                border-bottom: 1px solid #ccc
+    .sortable-gallery-items
+        .item
+            position: relative
+            img
+                max-width: 100%
+            .overlay
+                opacity: 0
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(#fff, .5)
+                @include transition(0.2s)
+            &:hover
+                .overlay
+                    cursor: pointer
+                    opacity: 1
+
+// Section Colors
+// ------------------------------------------------
+.color-section-1
+    background-color: $gray-300;
+    color: #fff
+
+.color-section-2
+    background-color: $gray-200;
+
+// Text Banner
+.text-banner
+    background-color: $gray-200
+
+// Forms
+//-------------------------------------------------
+
+
+// Containers
+//-------------------------------------------------
+
+
+// Decoration
+//-------------------------------------------------
+
+hr
+    border-top: 1px solid rgba(255, 255, 255, 0.30)
+.dark-hr
+    border-top: 1px solid rgba(0, 0, 0, 0.57)
+.light-hr
+    border-top: 1px solid rgba(255, 255, 255, 0.30)
+.dark-gradient
+    background: rgb(0,51,153)
+    background: linear-gradient(90deg, rgba(0,51,153,1) 0%, rgba(0,51,153,1) 72%, rgba(5,46,128,1) 82%, rgba(20,20,88,1) 100%)
+.dark-text
+	color: $main-color
+.white-text
+	color: #fff
+.dark-bg
+    background: $main-color
+    color: #fff
+.white-bg
+    background: #fff
+
+.icon-title
+    white-space: nowrap
+    display: inline-flex
+    .icon
+        margin-right: 5px
+        margin-top: 5px
+    .text
+        font-weight: 900
+        font-size: 1.8rem
+@media (max-width: 510px)
+    .icon-title
+        white-space: pre-wrap
+        .icon
+            margin-top: 1px
+        .text
+            font-size: 1.4rem
+        
+.small-icon-title
+    white-space: nowrap
+    display: inline-flex
+    .icon
+        margin-right: 5px
+        margin-top: 0
+    .text
+        font-weight: 900
+        font-size: 1.2rem
+@media (max-width: 510px)
+    .small-icon-title
+        white-space: pre-wrap
+// Texts
+//-------------------------------------------------
+
+.text-muted
+    color: #a9a9a9 !important
+
+
+// Elements
+//-----------------------------------------------    
+
+.horizontal-list
+    text-align: left
+    li
+        display: inline
+.item-icons
+    text-align: center
+    .item
+        padding: 10px
+        .inner
+            // background: $main-color
+            padding: 15px
+            @include flex-column()
+            height: 130px
+            @include transition(1s)
+            i
+                font-size: 2.5rem
+                margin-bottom: 5px
+                color: #b4b3b3
+            span
+                color: $main-color
+                font-size: 1.2rem
+                font-weight: 300
+            i,span
+                @include transition(1s)
+            &:hover
+                background: $main-color
+                @include box-shadow-container()
+                i,span
+                    color: #fff
+
+// Site Brand
+.site-brand
+    img
+        border-radius: 10px
+        @include box-shadow-btn()
+        max-width: 100%
+        width: 150px
+
+// Form Responses
+
+.form-response
+    text-align: center
+    padding-top: 50px
+    p
+        font-size: 1.3rem
+    i
+        font-size: 2rem
+    i.error
+        color: red
+    i.success
+        color: green
+
+#go-to-top
+    padding: 4px 9px
+    position: fixed
+    right: 26px
+    bottom: 30px
+    border: 1px solid #fff
+    background-color: $main-color
+    width: 40px
+    height: 40px
+    color: #fff
+    font-size: 2rem
+    z-index: 9997
+    &:hover,&:active,&:focus
+        color: #fff
+        cursor: pointer
+    
+@media (max-width: 500px)
+    #go-to-top
+        right: 15px

@@ -1,0 +1,311 @@
+extends includes/master.pug
+block content
+	
+	// ==================
+	//    CONTENIDO
+	// ==================
+
+	// INICIO y SLIDER
+	// ===============
+	a.anchor#Home
+	.carousel-full.carousel.slide(data-ride="carousel")
+		.carousel-inner
+			.carousel-item.active
+				img.d-block.w-100(src="img/slider4.jpg" alt="Seclar Seguridad Web")
+			.carousel-item
+				img.d-block.w-100(src="img/slider3.jpg" alt="Seclar Seguridad Web")
+			.carousel-item
+				img.d-block.w-100(src="img/slider1.jpg" alt="Seclar Seguridad Web")
+			.carousel-item
+				img.d-block.w-100(src="img/slider2.jpg" alt="Seclar Seguridad Web")
+			.carousel-content
+				img.image.wow.fadeIn(data-wow-duration="2s" data-wow-delay="2s" src="img/slider1-content.png" alt="First slide")
+				.text.wow.fadeInUp(data-wow-duration="2s")
+					h1.title SECLAR SEGURIDAD 
+					span.thin 
+						| Una empresa con más de 20 años <br>
+						| de <b>experiencia</b> en el mercado Argentino.
+
+	.home-mobile
+		img.image.wow.fadeIn(data-wow-duration="2s" data-wow-delay="2s" src="img/slider1-content.png" alt="First slide")
+		.text
+			h1.title SECLAR SEGURIDAD 
+			span.thin 
+				| Una empresa con más de 20 años <br>
+				| de <b>experiencia</b> en el mercado Argentino.
+
+	// SECTION 1
+	// ===========
+	section.item-icons.large-padding
+		.container
+			.row.justify-content-center.wow.fadeIn(data-wow-duration="2s")
+				h3 Brindamos soluciones integrales de seguridad en:
+			.row.justify-content-center.wow.fadeIn(data-wow-duration="2s" data-wow-delay="0.5s")
+				.col-xs-6.col-sm-3.item
+					.inner
+						i.fas.fa-home 
+						span Hogares 
+				.col-xs-6.col-sm-3.item
+					.inner
+						i.fas.fa-building 
+						span Consorcios
+				.col-xs-6.col-sm-3.item
+					.inner
+						i.fas.fa-leaf 
+						span Barrios Privados
+				.col-xs-6.col-sm-3.item
+					.inner
+						i.fas.fa-warehouse 
+						span Empresas
+				.col-xs-6.col-sm-3.item
+					.inner
+						i.fas.fa-store 
+						span Locales Comerciales
+				.col-xs-6.col-sm-3.item
+					.inner
+						i.fas.fa-hospital-alt  
+						span Centros de Salud
+				.col-xs-6.col-sm-3.item
+					.inner
+						i.fas.fa-hotel 
+						span Hotelería y Turismo
+									
+	// Filosofía
+	// =========
+	a.anchor#Filosofia
+	section.dark-bg.large-padding.filosofia
+		.container
+			.row.justify-content-center.wow.fadeInUp(data-wow-duration="2s")
+				.icon-title
+					.icon &#9642
+					.text NUESTRA FILOSOFIA
+			.row.justify-content-center.wow.fadeInUp(data-wow-duration="2s" data-wow-delay="0.5s")
+				.col-md-8
+					p.text-center
+						| Ofrecer productos y servicios de excelencia orientados a la <b>prevención,
+						| control y protección de bienes y personas,</b> con el objetivo de satisfacer 
+						| las necesidades de nuestros clientes en materia de seguridad electrónica.
+
+	// Nuestros Productos
+	// ==================
+	a.anchor#nuestros-productos
+	section.our-products
+		.container-fluid
+			.container
+				.row.text-center
+					.col-sm-12.content
+						.row
+							.col-md-4
+								img.img-fluid.wow.fadeIn(src="img/our-products-item.png" data-wow-duration="2s" data-wow-delay="2s")
+							.col-md-8.wow.fadeInUp(data-wow-duration="2s").text-column
+								.icon-title.main-color
+									.icon &#9642
+									.text NUESTROS PRODUCTOS
+								p SECLAR  SEGURIDAD  incorpora  en  sus  obras  la  <b>última  tecnología  en  sistemas  de seguridad integral.</b> Para ello, no sólo ofrece el equipamiento  más  confiable  del  mercado, sino  que  aplica  todos  los  cuidados  necesarios a fin  de  lograr  una instalación óptima e inviolable.
+								p Se especializa en el suministro, instalación, configuración y mantenimiento de:
+								.row.content-items
+									.col
+										.main-color
+											.mobile
+												| Video Vigilancia Full HD <br>
+												| Monitoreo de Imágenes por Internet<br>
+												| Sistemas de Intrusión <br>
+												| Control de Accesos <br>
+												| Seguridad Perimetral <br>
+												| Detección de Incendio <br>
+												| Porteros Video Visor HD
+											.desktop | Video Vigilancia Full HD | Monitoreo de Imágenes por Internet | Sistemas de Intrusión | Control de Accesos | Seguridad Perimetral | Detección de Incendio | Porteros Video Visor HD
+	section.container.warranty
+		.row.text-center
+			.col-xs-12.col-sm-12.col-md-6.col-lg-4.wow.fadeIn(data-wow-duration="2s")
+				.icon-title.main-color
+					.icon &#9642
+					.text ASESORAMIENTO
+				hr.grey-hr
+				p SECLAR SEGURIDAD realiza asesoramiento técnico comercial sin cargo permitiendo al cliente que adquiera un adecuado conocimiento acerca de la diversidad de opciones que existen en materia de seguridad electrónica con el objeto de que pueda elegir la mejor solución acorde a sus necesidades.
+			.col-xs-12.col-sm-12.col-md-6.col-lg-4.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
+				.icon-title.main-color
+					.icon &#9642
+					.text POST VENTA
+				hr.grey-hr
+				p SECLAR SEGURIDAD ofrece servicio de POST VENTA totalmente garantizado, brindando al cliente el soporte técnico en el momento que más lo necesite.
+			.col-xs-12.col-sm-12.col-md-12.col-lg-4.wow.fadeIn(data-wow-duration="2s" data-wow-delay="2s")
+				.icon-title.main-color
+					.icon &#9642
+					.text GARANTIA
+				hr.grey-hr
+				p SECLAR SEGURIDAD cuenta con laboratorio técnico propio para poder brindar los más altos estándares de calidad, trabajando con profesionalismo y excelencia.
+
+
+	// Servicios
+	// =========
+	section.services
+		.container
+			.row.service.off-set-top.wow.fadeInUp(data-wow-duration="2s")
+				.col-md-12
+					.icon-title.main-color
+						.icon &#9642
+						.text SISTEMAS DE INTRUSION
+					
+				.col-md-12
+					p
+						| La instalación de <b>sistemas de alarma contra intrusos</b> ha contribuido a <b>reducir la cantidad de robos en inmuebles.</b> <br>
+						| La necesidad de <b>evitar el ingreso de personas no autorizadas</b> en una zona o lugar determinado es la base de la existencia de estos equipos. <br>
+						| Para lograr esta protección SECLAR SEGURIDAD desarrolla una solución integral y totalmente personalizada utilizando los <b>últimos adelantos 
+						| tecnológicos en sistemas de alarma.</b>
+				hr
+				.carousel-multiple.owl-carousel.blog-featured-posts
+					- var images = ['img/intrusion/1.jpg', 'img/intrusion/2.jpg', 'img/intrusion/3.jpg', 'img/intrusion/4.jpg', 'img/intrusion/5.jpg', 'img/intrusion/6.jpg', 'img/intrusion/7.jpg', 'img/intrusion/8.jpg', 'img/intrusion/9.jpg']
+					each image in images
+						.item
+							img(src=image alt='Producto Seclar')
+			.row.service.wow.fadeInUp(data-wow-duration="2s")
+				.col-md-12
+					.icon-title.main-color
+						.icon &#9642
+						.text VIDEO DE VIGILANCIA 
+				.col-md-12
+					p 
+						| Actualmente los <b>sistemas de video vigilancia o sistemas de circuito cerrado de televisión (CCTV)</b> se han convertido en una herramienta fundamental en materia de seguridad y control. <br>
+						| Estos sistemas permiten reproducir y/o visualizar las imágenes capturadas por las cámaras, de manera local o remotamente desde cualquier parte del mundo a través de internet, accediendo con un <b>Smartphone, Tablet, Notebook.</b> <br>
+						| SECLAR SEGURIDAD utiliza <b>cámaras de alta definición con tecnología infrarroja,</b> permitiendo su visualización en entornos con bajos niveles de iluminación.
+					hr
+				.carousel-multiple.owl-carousel.blog-featured-posts
+					- var images2 = ['img/vigilancia/1.jpg', 'img/vigilancia/2.jpg', 'img/vigilancia/3.jpg', 'img/vigilancia/4.jpg', 'img/vigilancia/5.jpg', 'img/vigilancia/6.jpg', 'img/vigilancia/7.jpg', 'img/vigilancia/8.jpg', 'img/vigilancia/9.jpg', 'img/vigilancia/10.jpg']
+					each image in images2
+						.item
+							img(src=image alt='Producto Seclar')
+			.row.service.wow.fadeInUp(data-wow-duration="2s")
+				.col-md-12
+					.icon-title.main-color
+						.icon &#9642
+						.text CONTROL DE ACCESO
+				.col-md-12
+					p 
+						| El control de acceso consiste en un mecanismo que permite <b>verificar la identidad de un usuario</b> con el fin de <b>autorizar el ingreso o acceso</b> a recursos físicos o lógicos.
+						| Las distintas tecnologías nos permiten identificación por medio de la <b>biometría, detección facial, tarjetas de proximidad, claves numéricas o pin.</b>
+						| Principales tipos de sistema de control de acceso:
+					.row
+						.col-xs-12.col-md-12.col-lg-6
+							.carousel-simple.owl-carousel.blog-featured-posts
+								- var images2 = ['img/acceso/1.jpg', 'img/acceso/2.jpg', 'img/acceso/3.jpg', 'img/acceso/4.jpg', 'img/acceso/6.jpg', 'img/acceso/7.jpg', 'img/acceso/8.jpg']
+								each image in images2
+									.item
+										img(src=image alt='Producto Seclar')
+						.col-xs-12.col-md-12.col-lg-6.text-left
+							.small-icon-title.main-color
+								.icon &#9642
+								.text Control de Acceso Peatonal
+							p.small-text
+								| Los sistemas de <b>control de acceso peatonal</b> se implementan para tener el <b>control de todo el personal</b> que transita en un espacio público o privado, 
+								| permitiendo el ingreso a personas autorizadas y <b>restringiendo el ingreso a personas no autorizadas.</b> Las soluciones para control de acceso peatonal 
+								| son muy variadas dependiendo de las aplicaciones y las necesidades de cada cliente, se pueden tener desde un solo dispositivo que controla una puerta, 
+								| hasta múltiples dispositivos integrados a diferentes sistemas electromecánicos gestionados por medio de un software centralizado.
+							.small-icon-title.main-color
+								.icon &#9642
+								.text Control De Acceso Vehicular
+							p.small-text
+								| Los sistemas de <b>control de acceso vehicular</b> permiten el <b>control de los vehículos</b> que circulan por un espacio público o privado, 
+								| asegurando el paso a los vehículos permitidos y <b>restringiendo a aquellos que no estén autorizados.</b> Al integrar un sistema de control 
+								| de acceso vehicular, podemos tener el control total, tanto de los residentes como de los visitantes.
+							.small-icon-title.main-color
+								.icon &#9642
+								.text Control de Asistencia y Presentismo
+							p.small-text
+								| Los sistemas de <b>control de asistencia y presentismo</b> son esenciales para la buena <b>administración del personal</b> en una empresa 
+								| o negocio. Se trata de controlar y contabilizar de forma sencilla y efectiva los <b>tiempos de llegada y salida de los empleados, </b>
+								| permitiendo <b>seguimientos y reportes de horarios trabajados</b> (horas normales, horas extras, horarios rotativos, llegadas tardes, 
+								| salidas anticipadas, entre otros)
+			.row.service.wow.fadeInUp(data-wow-duration="2s")
+				.col-md-12
+					.inner
+						.icon-title.main-color
+							.icon &#9642
+							.text DETECCION DE INCENDIO
+						p
+							| Los sistemas de <b>detección de incendio</b> son instalaciones destinadas a <b>detectar en forma anticipada el desarrollo de un incendio,</b>
+							| dando aviso de este evento por medio de <b>señales acústicas y luminosas</b> a los ocupantes del lugar, de ahí su vital importancia, al otorgar una alarma temprana para poder activar los planes de contención y contingencia.
+							| SECLAR SEGURIDAD posee una amplia experiencia en instalaciones industriales, comerciales, bancarias, building, etc., garantizando la correcta protección de los bienes y personas.
+						.carousel-multiple.owl-carousel.blog-featured-posts
+							- var images2 = ['img/incendio/1.jpg', 'img/incendio/2.jpg', 'img/incendio/3.jpg', 'img/incendio/4.jpg', 'img/incendio/5.jpg']
+							each image in images2
+								.item
+									img(src=image alt='Producto Seclar')
+			.row.service.wow.fadeInUp(data-wow-duration="2s")
+				.col-md-12
+					.inner
+						.icon-title.main-color
+							.icon &#9642
+							.text SECLAR SEGURIDAD
+						p
+							| posee una amplia experiencia en instalaciones industriales, comerciales, bancarias, building, etc., garantizando la correcta protección de los bienes y personas.
+
+	// Clientes
+	// ========
+	section.clients-logos
+		.container
+			.row.justify-content-center.wow.fadeInUp(data-wow-duration="2s")
+				.icon-title.main-color
+					.icon &#9642
+					.text Ellos eligieron a SECLAR
+			.row
+				.carousel-multiple.owl-carousel.clients-carousel
+					- var images2 = ['img/clientes/1.png', 'img/clientes/2.png', 'img/clientes/3.png', 'img/clientes/4.png', 'img/clientes/5.png', 'img/clientes/6.png', 'img/clientes/7.png', 'img/clientes/8.jpg', 'img/clientes/9.png', 'img/clientes/10.jpg', 'img/clientes/11.jpg', 'img/clientes/12.jpg', 'img/clientes/13.jpg', 'img/clientes/14.jpg', 'img/clientes/15.jpg',]
+					each image in images2
+						.item
+							.inner
+								img(src=image alt='Clientes Seclar')
+	// Google Maps
+	// ===========
+	section.google-map
+		| <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6571.780427669881!2d-58.48774310128356!3d-34.55633499566836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb68d8789b9bb%3A0x39cd59f751f788b0!2sEstomba+3607%2C+C1430EIQ+CABA!5e0!3m2!1ses-419!2sar!4v1534194767622" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	// Contacto
+	// ========
+	
+	a.anchor#Contact
+	section.contact-section.contact-widgets.wow.fadeIn(data-wow-duration="2s")
+		.container
+			.row
+				.col-md-6.column
+					h2 CONTACTO
+					form(method='POST')#contact-form.main-form
+						.form-group
+							input.form-control(name='name' type='text' placeholder='Nombre / Empresa')
+						.form-group
+							input.form-control(name='phone' type='text' placeholder='Teléfono')
+						.form-group
+							input.form-control(name='email' type='email' placeholder='E-mail')
+						.form-group
+							textarea#exampleFormControlTextarea1.form-control(name='message' rows='3' placeholder='Dejenos su consulta o mensaje')
+						button#submit-btn.btn.btn-block(type='submit') Enviar
+					#form-thanks.form-response
+						i.fas.fa-check.success
+						p
+							| Gracias por contactarse con Seclar Seguridad. <br> Nos estaremos comunicando a la brevedad.
+
+					#form-error.form-response
+						i.fas.fa-times.error
+						p
+							| Ha ocurrido un error. <br> Puede contactarse directamente usando los datos de esta sección.
+
+				.col-md-6.column.contact-data
+					.inner
+						h3 Seclar Seguridad Electrónica S.R.L.
+						.item
+							i.fas.fa-map-marker-alt
+							span Estomba 3607 - Capital Federal
+						.item
+							i.fas.fa-phone-volume
+							span (011) 6385-0286
+						.item
+							i.fas.fa-envelope-open
+							span info@seclar.com.ar
+						.item
+							i.fas.fa-globe-americas
+							span www.seclar.com.ar
+						hr.light
+						.item
+							a(href="https://www.facebook.com/seclarseguridad/" target="blank")
+								i.fab.fa-facebook
+								span Seguinos
